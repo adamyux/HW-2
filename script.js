@@ -32,6 +32,7 @@ function newloginClick() {
 
 function oldloginClick() {
     
-    alert("Welcome back! ");
-        
+  var name = document.getElementById("exusername").value;
+  alert("Welcome back, " + name + "! ");
+  
 }
