@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <form name="mainFrom" onsubmit="return false">
+
+    
+   <fieldset id="clickButtons">
+
+    <legend>Welcome to Practice Website</legend>
+        
+    <input type="submit" value="Click for New User" onclick="newformSubmitEvent()">
+    <input type="submit" value="Click for Existing User" onclick="exformSubmitEvent()">
+
+   </fieldset>
+
+   <fieldset id="newUser">
+
+    <legend>New User</legend>
+
+    <label for="username"> UserName:</label> 
+    <input type="text" id="newusername" name="username" />
+    
+    <label for="password">Password:</label>
+    <input type="text" id="password" name="password" />
+      <br>
+    
+     <label for="city">City:</label>
+    <input name="city" id="city" />
+    
+		<label for="state">State (abbr.):</label>
+    <input name="state" id="state" />
+    
+    <input type="submit" value="Login" onclick="newloginClick()">
+    
+   </fieldset>
+    
+	 <fieldset id="existingUser">
+    
+    <legend>Existing User</legend>
+        
+    <label for="username">UserName:</label>
+    <input name="username" id="exusername" />
+    
+    <label for="password">Password:</label>
+    <input name="password" id="password" />
+
+    <input type="submit" value="Login" onclick="oldloginClick()">
+    
+   </fieldset>
+
+  </form>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
